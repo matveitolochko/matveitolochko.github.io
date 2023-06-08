@@ -1,11 +1,11 @@
-<h1 align="center">Packges</h1>
+<h1 align="center">Packages</h1>
 
 ## Gradle
 ```gradle
 repositories {
     maven {
         name = 'Atomic'
-        url = 'https://www.github.linkrbot.com/packages/'
+        url = 'https://www.github.linkrbot.com/maven/'
     }
 }
 ```
@@ -14,6 +14,6 @@ repositories {
 ```xml
 <repository>
     <id>Atomic</id>
-    <url>https://www.github.linkrbot.com/packages/</url>
+    <url>https://www.github.linkrbot.com/maven/</url>
 </repository>
 ```
