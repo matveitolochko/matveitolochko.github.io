@@ -5,7 +5,7 @@
 repositories {
     maven {
         name = 'Atomic'
-        url = 'https://www.github.linkrbot.com/maven/'
+        url = 'https://github.linkrbot.com/maven/'
     }
 }
 ```
@@ -14,6 +14,6 @@ repositories {
 ```xml
 <repository>
     <id>Atomic</id>
-    <url>https://www.github.linkrbot.com/maven/</url>
+    <url>https://github.linkrbot.com/maven/</url>
 </repository>
 ```
