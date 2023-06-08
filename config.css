@@ -1,0 +1,10 @@
+:root {
+    --background-color: #22272e;
+    --text-color: #ffffffa4;
+    --important-text-color: #ea00ff;
+
+    --scrollbar-color: #ffffffa4;
+
+    --link-color: #148ead;
+    --link-visited-color: #148ead;
+}

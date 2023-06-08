@@ -1,0 +1,63 @@
+@import "config.css";
+
+/* Common */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    align-content: center;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    outline: 1px solid var(--scrollbar-color);
+}
+
+.PINK {
+    color: var(--important-text-color);
+}
+
+a:link {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+/* Mobile */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 3.75vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 1.1vw;
+        margin: 0 20% 10%;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+}
