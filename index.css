@@ -1,0 +1,38 @@
+:root {
+    --background: #f2f2f2;
+    --text-color: #000;
+}
+
+.darkmode {
+    --background: #25252b;
+    --text-color: #f2f2f2;
+    --navbar-color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background) !important;
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}
+
+#navbar {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.face {
+    border-radius: 50%;
+}
+
+#name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
