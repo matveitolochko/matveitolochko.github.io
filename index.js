@@ -215,11 +215,11 @@ const ICONS = [
 
 const getWidth = () => {
     return Math.max(
-        document.documentElement["clientWidth"],
-        document.body["scrollWidth"],
-        document.documentElement["scrollWidth"],
-        document.body["offsetWidth"],
-        document.documentElement["offsetWidth"]
+        document.documentElement["clientWidth"] || 0,
+        document.body["scrollWidth"] || 0,
+        document.documentElement["scrollWidth"] || 0,
+        document.body["offsetWidth"] || 0,
+        document.documentElement["offsetWidth"] || 0
     );
 }
 
@@ -314,19 +314,24 @@ const main = async (h) => {
             const div = document.getElementById(`floating-${icon.name}-div`);
             const img = document.getElementById(`floating-${icon.name}-icon`);
             if (!div || !img) return;
-            if (getWidth() < 600) {
+            if (getWidth() < 1000) {
                 div.style.opacity = "0";
                 return;
             }
             div.style.opacity = "1";
 
-            if(icon.dark) {
-                if(document.body.classList.contains("darkmode")) {
-                    img.src = `assets/langs/${icon.dark}`;
-                } else {
-                    img.src = `assets/langs/${icon.file}`;
+            function checkColor() {
+                if(icon.dark) {
+                    if(document.body.classList.contains("darkmode")) {
+                        if (img.src == `assets/langs/${icon.dark}`) return;
+                        img.src = `assets/langs/${icon.dark}`;
+                    } else {
+                        if (img.src == `assets/langs/${icon.dark}`) return;
+                        img.src = `assets/langs/${icon.file}`;
+                    }
                 }
             }
+            checkColor();
 
             const offset = icon.offset || 0;
             div.style.transform = `rotate(${delta % 360 + offset}deg)`;
