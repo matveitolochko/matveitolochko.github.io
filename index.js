@@ -28,7 +28,7 @@ TurboGUI(ctx => {
             }
         }
     }
-    paintGrid();
+    // paintGrid();
 
     const boxes_in_width = Math.floor(ctx.width / BOX_SIZE);
     /** Boxes per tick */
