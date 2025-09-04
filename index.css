@@ -1,38 +1,52 @@
-:root {
-    --background: #f2f2f2;
-    --text-color: #000;
-}
-
-.darkmode {
-    --background: #25252b;
-    --text-color: #f2f2f2;
-    --navbar-color: #000;
-}
-
 body {
+    /* background-color: #313338; */
+    color: white;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background) !important;
-    color: var(--text-color);
-    transition: all 0.3s linear;
+
+    overflow: hidden;
+
+    /* background-color: black; */
 }
 
-#navbar {
+#background {
     position: absolute;
-    top: 1%;
-    right: 1%;
-    display: flex;
-    justify-content: right;
-    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+nav ul.topnavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul.topnavbar li {float: left;}
+
+nav ul.topnavbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul.topnavbar li a:hover:not(.active) {background-color: #111;}
+nav ul.topnavbar li a.active {background-color: #04AA6D;}
+nav ul.topnavbar li.right {float: right;}
+
+#logo {
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+    width: 900px;
+    height: 320px;
+    /* width: 100vw; */
+    /* height: 100vh; */
 }
 
 .face {
     border-radius: 50%;
-}
-
-#name {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
 }

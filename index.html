@@ -11,7 +11,7 @@
     />
     <meta
         name = "description"
-        content = "Hi, I am Matvei Tolochko. I am a Highschool Student who has been programming for the past 7 years."
+        content = "Hi, I am Matvei Tolochko. I am a first year University student who has been programming for the past 8 years."
     />
     <meta
         name = "keywords"
@@ -38,7 +38,7 @@
     <meta
         name = "og:image"
         property = "og:image"
-        content = "assets/icon.png"
+        content = "./icon.png"
     />
     <meta
         name = "og:locale"
@@ -47,25 +47,17 @@
     />
     <link
         rel = "icon"
-        href = "assets/icon.png"
+        href = "./icon.png"
     />
 
     <!-- CSS and JS -->
     <link
         rel = "stylesheet"
         type = "text/css"
-        href = "style.css"
-        onerror = "alert('Failed to load some styles! Please try reloading.');location.href='/';"
+        href = "./index.css"
     />
-    <script
-        src = "https://cdn.jsdelivr.net/gh/AtomicGamer9523/hyperlight/hyperlight.min.js"
-        integrity = "sha384-snHoqY8ui+LKDw8TE81whtm5izNxzTsppNNJbSqZPVW35WTQrAxCpJb45+CBBfcL"
-        crossorigin = "anonymous"
-        onerror = "alert('Failed to load some styles! Please try reloading.');location.href='/';"
-    ></script>
-    <script
-        src = "./turbogui.min.js"
-    ></script>
+    <script src="./hyperlight.min.js" async></script>
+    <script src="./background.js" defer></script>
 </head>
 <body>
 <!--
@@ -89,9 +81,10 @@ There are a few secrets hidden here and there...
 See if you can find them all ;)
 
 -->
-    <p style = "position:absolute;opacity:0.0001">
-        Hi, I am Matvei Tolochko. I am a Highschool Student who has been programming for the past 7 years.
-        I have experience with: Rust, Python, C/C++, Java, JavaScript, TypeScript, HTML, CSS,
+    <p style = "position:absolute;width:0px;height:0px;font-size:0;">
+        Hi, I am Matvei Tolochko. I am a First Year University Student who has
+        been programming for the past 8 years. I have experience with:
+        Rust, Python, C/C++, Java, JavaScript, TypeScript, HTML, CSS,
         Assembly, Gradle, Kotlin, Dart, Flutter, Docker, Linux, and Kubernetes.
         The list is quite large. On top of that I built projects for every situation:
         I made my own operating system, kernel, and bootloader from scratch.
@@ -102,57 +95,29 @@ See if you can find them all ;)
         I find it works quite well, otherwise you wouldn't have been here :)
     </p>
 
-    <!-- Background -->
-    <turbogui-canvas><!-- This is my custom-made tiny canvas wrapper --></turbogui-canvas>
+    <!-- <nav>
+        <ul class = "topnavbar">
+            <li><canvas id = "logo"></canvas></li>
+            <li><a></a></li>
+        </ul>
+    </nav> -->
 
-    <!-- Top Navbar -->
-    <section
+    <!-- Content -->
+    <main
         align = "center"
     >
+        <h1>Matvei Tolochko</h1>
         <br>
-        <img
+        <!-- <img
             s.position = "relative"
             s.top = "0px"
             s.border-radius = "50%"
             width = "250px"
             id = "icon"
-            src = "assets/icon.png"
+            src = "./icon.png"
             alt = "Icon"
             lazyload
-        />
-    </section>
-
-    <!-- Content -->
-    <section
-        align = "center"
-        id = "info"
-        s.top = "500px"
-    >
-        <br /><br />
-        <p>Hi, I am Matvei Tolochko.</p>
-        <p>I am a Highschool Student who has been programming for the past 7 years.</p>
-    </section>
-    <div
-        s.opacity = "0"
-        s.width = "500px"
-        s.height = "500px"
-        s.position = "absolute"
-        s.top = "0px"
-        s.border-radius = "50%"
-        s.filter = "blur(25px)"
-        s.background = "
-            radial-gradient(
-                circle at center,
-                white,
-                transparent 40%
-            ),
-            conic-gradient(
-                from 45deg,
-                #663a6d 52deg, #24425e 65deg,
-                #18665c 120deg 307deg,
-                #345a7f 353deg
-            )"
-    ></div>
-    <script src = "index.js"></script>
+        /> -->
+    </main>
 </body>
 </html>
