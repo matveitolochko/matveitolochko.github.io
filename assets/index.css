@@ -1,0 +1,113 @@
+:root {
+    --background: #313338;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./UbuntuSans-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('./DejaVuSansMonoBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, h1, h2 {
+    margin: 0px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    color: white;
+    /* overflow: hidden; */
+
+    /* height: 100vh; */
+
+    /* background-color: black; */
+}
+
+main {
+    position: relative;
+    min-height: calc(100vh - calc(2.5rem + 2rem));
+    padding-top: 2rem;
+}
+
+footer {
+    /* clear: both; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* height: 200px; */
+    /* margin-top: -200px; */
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 105px;
+    color: var(--background);
+    text-shadow:
+         3px  3px blue,
+         3px -3px blue,
+        -3px  3px blue,
+        -3px -3px blue
+    ;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'DejaVu', sans-serif;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+#background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* nav ul.topnavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul.topnavbar li {float: left;}
+
+nav ul.topnavbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul.topnavbar li a:hover:not(.active) {background-color: #111;}
+nav ul.topnavbar li a.active {background-color: #04AA6D;}
+nav ul.topnavbar li.right {float: right;}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 900px;
+    height: 320px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.face {
+    border-radius: 50%;
+} */
