@@ -60,7 +60,7 @@
         type = "text/css"
         href = "./assets/index.css"
     />
-    <!-- <script src="./assets/hyperlight.min.js" async></script> -->
+    <script src="./assets/hyperlight.min.js"></script>
     <!-- <script src="./assets/background.js" defer></script> -->
 </head>
 <body>
@@ -99,25 +99,44 @@ See if you can find them all ;)
         I find it works quite well, otherwise you wouldn't have been here :)
     </p>
 
-    <!-- <nav>
-        <ul class = "topnavbar">
-            <li><canvas id = "logo"></canvas></li>
-            <li><a></a></li>
-        </ul>
-    </nav> -->
-
     <!-- Content -->
     <main
         align = "center"
     >
-        <h1>Matvei Tolochko</h1>
+        <h1
+            aria-label = "Matvei Tolochko"
+        >
+            <svg
+                viewbox = "0 0 1000 125"
+                aria-label = "Matvei Tolochko"
+            >
+                <text
+                    x = "500"
+                    y = "110"
+                    text-anchor = "middle"
+                    fill = "none"
+                    stroke-width = "4"
+                    stroke = "blue"
+                    font-family = "'Ubuntu', sans-serif"
+                >Matvei Tolochko</text>
+            </svg>
+        </h1>
         <h2>Engineering today the technology of tomorrow</h2>
-        <br>
-        <p>
-            Hi, I am Matvei Tolochko. I am a First Year University Student that
-            has been programming for the past 9 years.
-        </p>
-        
+        <article>
+            <p
+                align = "left"
+            >
+                Hi, I am Matvei Tolochko. I am a First Year University Student
+                that has been programming for the past 9 years.
+                Althought I can do both front-end and backend, I prefer backend.
+                <br>
+                I have built many projects, including my own <a
+                    href = "https://github.com/rinuxos"
+                    target = "_blank"
+                    title = "Rinux - my own operating system"
+                >os</a>.
+            </p>
+        </article>
     </main>
     <!-- <header> -->
         <!-- TODO: implement additional tabs -->
@@ -125,15 +144,47 @@ See if you can find them all ;)
     <!-- </header> -->
 
     <!-- Content -->
-
-    <footer>
-        <img
-            width = "50px"
-            src = "./assets/email.svg"
-            alt = "email"
-            decoding = "async"
-            loading = "lazy"
-        />
+    <footer
+        align = "center"
+    >
+        <a
+            $href = "mailto:${atob('bWF0LnRvbG9jaGtvK2NvbnRhY3RAZ21haWwuY29t')}"
+            target = "_blank"
+            aria-label = "Email (Opens in a new tab)"
+            title = "Email"
+        >
+            <img
+                width = "36px"
+                src = "./assets/email.svg"
+                alt = "email"
+            />
+        </a>
+        <a
+            href = "https://github.com/matveitolochko"
+            target = "_blank"
+            rel = "noreferrer noopener"
+            aria-label = "Github (Opens in a new tab)"
+            title = "Github"
+        >
+            <img
+                width = "36px"
+                src = "./assets/github.svg"
+                alt = "github"
+            />
+        </a>
+        <a
+            href = "https://linkedin.com/in/matveit/"
+            target = "_blank"
+            rel = "noreferrer noopener"
+            aria-label = "Linkedin (Opens in a new tab)"
+            title = "Linkedin"
+        >
+            <img
+                width = "36px"
+                src = "./assets/linkedin.svg"
+                alt = "linkedin"
+            />
+        </a>
     </footer>
 </body>
 </html>
