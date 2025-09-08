@@ -1,7 +1,8 @@
 :root {
     /* --background: #313338; */
     --background: black;
-    --text-color: white;
+    --text-color: #BABABA;
+    --text-color-hover: #FAFAFA;
     --outline-color: rgba(0, 0, 255, 0.5);
     --link-color: #78f0f0;
     --link-color-hover: #193be6;
@@ -23,6 +24,7 @@
 
 html, body, h1, h2 {
     margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -32,7 +34,7 @@ body {
     top: 0px;
     left: 0px;
     width: 100vw;
-    color: white;
+    color: var(--text-color);
 }
 
 main {
@@ -51,10 +53,10 @@ main article {
     border: 2px solid rgba(0, 0, 255, 0.5);
     position: relative;
     text-align: justify;
-    font-size: 1.1cqi;
+    font-size: clamp(15px, 1.1cqi, 22.5px);
 }
 
-a:link {
+a:link, a:visited, a:active {
     color: var(--link-color);
     text-decoration: none;
 }
@@ -83,10 +85,55 @@ h1 {
 h2 {
     margin-top: 0px;
     font-size: 30px;
+    color: var(--text-color-hover);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1325px) {
+    main {
+        width: 90vw;
+        left: 5vw
+    }
+
+    main article {
+        margin: 20px 40px;
+        padding: 0px 10px;
+        font-size: clamp(13.5px, 1.5cqi, 18.5px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        position: relative;
+        top: -20px;
+    }
+
+    h2 {
+        position: relative;
+        top: -20px;
+    }
+
+    main {
+        width: 100vw;
+        left: 0px;
+    }
+
+    main article {
+        margin: 10px 20px;
+        padding: 0px 5px;
+        font-size: clamp(10px, 2.5cqi, 25px);
+    }
 }
 
 #background {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+footer svg {
+    fill: var(--text-color);
+}
+
+footer svg:hover {
+    fill: var(--text-color-hover);
 }
